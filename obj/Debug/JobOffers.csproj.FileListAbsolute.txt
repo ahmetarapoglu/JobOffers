@@ -81,3 +81,5 @@ C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug
 C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug\JobOffers.Migrations.AddJobsTable.resources
 C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug\JobOffers.Migrations.UserCreate.resources
 C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug\JobOffers.csprojResolveAssemblyReference.cache
+C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug\JobOffers.Migrations.ApplayForJobs.resources
+C:\Users\gsm\documents\visual studio 2015\Projects\JobOffers\JobOffers\obj\Debug\JobOffers.Migrations.EditJobModel.resources

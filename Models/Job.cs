@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using WebApplication1.Models;
 
 namespace JobOffers.Models
 {
@@ -21,6 +22,9 @@ namespace JobOffers.Models
         [DisplayName("Job Type")]
         public int CategoryId { get; set; }
 
-        public virtual Category Category { get; set; }  
+        public string UserID { get; set; }
+
+        public virtual Category Category { get; set; }
+        public virtual ApplicationUser User { get; set; }
     }
 }

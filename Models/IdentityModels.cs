@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Collections.Generic;
+using JobOffers.Models;
 
 namespace WebApplication1.Models
 {
@@ -10,6 +12,7 @@ namespace WebApplication1.Models
     public class ApplicationUser : IdentityUser
     {
         public string UserType { get; set; }
+        public virtual ICollection<Job> Jobs { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -34,6 +37,8 @@ namespace WebApplication1.Models
         public System.Data.Entity.DbSet<JobOffers.Models.Category> Categories { get; set; }
 
         public System.Data.Entity.DbSet<JobOffers.Models.Job> Jobs { get; set; }
+
+        public System.Data.Entity.DbSet<JobOffers.Models.ApplayForJob> ApplayForJobs { get; set; }
 
         
     }

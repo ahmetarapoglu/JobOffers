@@ -4,10 +4,10 @@
 }
 
 <!--<div class="jumbotron">-->
-    <div>
+    <div class="jumbotron" style="height:250px;">
     <h2>JobOffers</h2>
     <p>Welcome to JobOffers. This site provides you with many opportunities and opportunities to work while you are at home.</p>
-    <p><a href="http://asp.net" class="btn btn-default btn-lg">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="http://asp.net" >Learn more &raquo;</a></p>
 </div>
 @foreach (var item in Model)
 {
@@ -23,7 +23,7 @@
                     <img src="~/Uploads/@subItem.JobImage"  />
                     <h3>@Html.DisplayFor(modelItem => subItem.JobTitle)</h3>
                     <h5>@Html.DisplayFor(modelItem => subItem.JobContent)</h5>
-                    <button class="btn btn-default">More details</button>
+                    @Html.ActionLink("Details", "Details", new { JobId = subItem.Id }, new { @class = "btn btn-primary" }) 
                 </div>
             }
         </div>
