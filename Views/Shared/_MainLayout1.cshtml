@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <title>@Page.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <link href="~/Content/Style1.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+
+    <!--Header-->
+    <nav class="navbar navbar-default navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="~/images/5 (3).jpg" class="logo-size" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collpase">
+                <ul class="nav navbar-nav">
+                    <li>
+                        
+                        <a href="Home/index">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-folder-open"></i>
+                            Departments
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            About us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+               <!--partial Login-->
+                @Html.Partial("_Login")
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            @RenderBody()
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="myfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="glyphicon glyphicon-info-sign"></i>Who are we ?</h3>
+                    <p>It brings together job seekers and employers on the internet with new generation technologies in employment, job search and job recruitment processes.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3><i class="glyphicon glyphicon-globe"></i>Important links</h3>
+                    <ul>
+                        <li><a href="#">Jobs for the public sector</a></li>
+                        <li><a href="#">private sector jobs</a></li>
+                        <li><a href="#">Jobs abroad</a></li>
+                        <li><a href="#">miscellaneous Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3><i class="glyphicon glyphicon-send"></i>Follow us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twiter</a></li>
+                        <li><a href="#">Instegram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>All rights reserved-2021</span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/css/bootstrap.min.css.js"></script>
+
+  
+
+</body>
+</html>
